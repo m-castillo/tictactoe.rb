@@ -19,10 +19,10 @@ def check_board
 end
 
 # select a space and write X
-def player_selection(board)
+def player_selection(something)
   puts "Please select a space (1 - 9): "
   selection = gets.chomp.to_i
-  board[selection] = "X"
+  something[selection] = "X"
 end
 
 player_selection(check_board)
